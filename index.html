@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/bank icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c775ac9d8b.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="image/pngwing.com.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Text Editor</title>
+</head>
+<body>
+    <main class="grid place-items-center h-screen">
+        <div class="w-8/12 bg-blue-400 mx-auto rounded-md font-medium ">
+            <h2 class="text-5xl text-center py-2">Text Editor</h2>
+            <div class="px-10 py-2">
+            <!-- Editing Options -->
+            <div class="border-solid border-2 border-black p-4 bg-sky-300">
+                <div class="flex justify-between items-center mb-4">
+                    <div class="text-xl flex gap-3">
+                        <i id="bold-btn" class="fa-solid fa-bold rounded p-1"></i>
+                        <i id="italic-btn" class="fa-solid fa-italic rounded p-1"></i>
+                        <i id="unLine-btn" class="fa-solid fa-underline rounded p-1"></i>
+                    </div>
+                    <div class="flex gap-3 text-xl">
+                        <i id="text-left" class="fa-solid fa-align-left rounded p-1"></i>
+                        <i id="text-center" class="fa-solid fa-align-center rounded p-1"></i>
+                        <i id="text-right" class="fa-solid fa-align-right rounded p-1"></i>
+                        <i id="text-justify" class="fa-solid fa-align-justify rounded p-1"></i>
+                    </div>
+                    <div class="flex gap-3 text-xl">
+                        <input id="font-size" type="number" class="w-12 pl-1 rounded">
+                        <h3 id="upperCaseBtn" class="rounded p-1">aA</h3>
+                        <input type="color" name="" id="clr-Input" class="rounded h-auto">
+                    </div>
+                </div>
+                <div class="border-solid border-black border-t border-4 mb-4 rounded"></div>
+                <div>
+                    <textarea name="" id="content" class="text-base font-normal w-full h-[60svh] p-1"></textarea>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
