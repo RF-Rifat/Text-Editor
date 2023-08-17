@@ -48,8 +48,10 @@ selectedNumber.value = 16;
 
 document.getElementById('font-size').addEventListener("change", () => {
     const selectedNumber = document.getElementById('font-size').value;
-    let fontSize = `text-[${selectedNumber}px]`
-    textEdit(`text-[${selectedNumber}px]`);
+    const content = document.getElementById('content');
+    let fontSize = `${selectedNumber}px`
+    content.style.fontSize = fontSize;
+    console.log(fontSize);
 });
 
 document.getElementById('upperCaseBtn').addEventListener('click',()=>{
@@ -60,6 +62,8 @@ document.getElementById('upperCaseBtn').addEventListener('click',()=>{
 
 document.getElementById('clr-Input').addEventListener("change", () => {
     const selectedColor = document.getElementById('clr-Input').value;
-    let textClr = `text-[${selectedColor}]`
+    const content = document.getElementById('content');
+    let textClr = `${selectedColor}`
+    content.style.color = textClr;
     textEdit(textClr);
 });
